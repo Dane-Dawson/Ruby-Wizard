@@ -1,5 +1,12 @@
 require_relative '../config/environment'
 
+game_startup
+
+#game loop
+#finish game
 
 
-puts "HELLO WORLD"
+#spell_prompt
+
+
+
