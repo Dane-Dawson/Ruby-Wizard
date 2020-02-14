@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20200213151048) do
     t.integer "armor"
     t.integer "strength"
     t.boolean "stealth"
+    t.string  "type"
   end
 
   create_table "encounters", force: :cascade do |t|
@@ -37,7 +38,9 @@ ActiveRecord::Schema.define(version: 20200213151048) do
   create_table "spellbots", force: :cascade do |t|
     t.string  "name"
     t.integer "health"
+    t.integer "max_health"
     t.integer "current_encounter"
+    t.boolean "first_time"
   end
 
   create_table "spells", force: :cascade do |t|

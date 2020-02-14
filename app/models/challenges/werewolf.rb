@@ -9,8 +9,8 @@ class Werewolf < Challenge
         self.element ||= "fire"
         self.health ||= 10
         self.armor ||= 0
-        self.strength ||= 0
-        self.stealth ||= true
+        self.strength ||= 1
+        self.stealth ||= false
     end
 
     def attacks

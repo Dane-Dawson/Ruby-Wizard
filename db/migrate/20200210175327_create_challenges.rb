@@ -8,6 +8,7 @@ class CreateChallenges < ActiveRecord::Migration[5.0]
       t.integer :armor
       t.integer :strength
       t.boolean :stealth
+      t.string :type
     end
   end
 end
